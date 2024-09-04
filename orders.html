@@ -6,111 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orders</title>
-    <link rel="stylesheet" href="pstyle.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .days-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            /* 7 columns for 7 days a week */
-            gap: 50px;
-            max-width: 700px;
-            margin: 0 auto;
-            padding-top: 50px;
-        }
-
-        .day-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 140px;
-            height: 60px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .day-link:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-            /* Slightly enlarges the element on hover */
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        .navbar {
-            position: relative;
-            animation: slideIn 0.5s ease-out;
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateY(-100%);
-            }
-
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        .nav-link {
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: #d1d1d1;
-            /* Change text color on hover */
-            transform: translateY(-2px);
-            /* Slightly move text upwards */
-        }
-
-        .wow-effect {
-            position: absolute;
-            top: 95%;
-            left: 0;
-            width: 100%;
-            height: 5vh;
-            background: linear-gradient(45deg, #ff9900, #fdd974, #ffce46, #ff9900);
-            background-size: 50% 100%;
-            animation: gradientMove 10s ease infinite;
-            z-index: -1;
-            /* Keeps the effect in the background */
-            opacity: 0.7;
-            pointer-events: none;
-            /* Ensures the effect does not interfere with clicking */
-        }
-    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger" aria-label="Eighth navbar example">
         <div class="container">
-            <div class="collapse navbar-collapse" id="navbarsExample07">
+            <div class="navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Գլխավոր</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">Տեսականի</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="page1.html">Dargett</a></li>
-                            <li><a class="dropdown-item" href="page2.html">Yeremyan Product</a></li>
-                            <li><a class="dropdown-item" href="page3.html">Matisse</a></li>
-                            <li><a class="dropdown-item" href="page4.html">name</a></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
@@ -119,44 +26,45 @@
     <div>
         <ul class="days-container">
             <li class="nav-item">
-                <a class="day-link .btn-bounce" aria-current="page" href="january.html">Հունվար</a>
+                <a class="day-link" id="january" href="january.html">Հունվար</a>
             </li>
             <li class="nav-item">
-                <a class="day-link .btn-bounce" aria-current="page" href="february.html">Փետրվար</a>
+                <a class="day-link" id="february" href="february.html">Փետրվար</a>
             </li>
             <li class="nav-item">
-                <a class="day-link .btn-bounce" aria-current="page" href="march.html">Մարտ</a>
+                <a class="day-link" id="march" href="march.html">Մարտ</a>
             </li>
             <li class="nav-item">
-                <a class="day-link .btn-bounce" aria-current="page" href="april.html">Ապրիլ</a>
+                <a class="day-link" id="april" href="april.html">Ապրիլ</a>
             </li>
             <li class="nav-item">
-                <a class="day-link .btn-bounce" aria-current="page" href="may.html">Մայիս</a>
+                <a class="day-link" id="may" href="may.html">Մայիս</a>
             </li>
             <li class="nav-item">
-                <a class="day-link" aria-current="page" href="june.html">Հունիս</a>
+                <a class="day-link" id="june" href="june.html">Հունիս</a>
             </li>
             <li class="nav-item">
-                <a class="day-link" aria-current="page" href="july.html">Հուլիս</a>
+                <a class="day-link" id="july" href="july.html">Հուլիս</a>
             </li>
             <li class="nav-item">
-                <a class="day-link" aria-current="page" href="august.html">Օգոստոս</a>
+                <a class="day-link" id="august" href="august.html">Օգոստոս</a>
             </li>
             <li class="nav-item">
-                <a class="day-link" aria-current="page" href="september.html">Սեպտեմբեր</a>
+                <a class="day-link" id="september" href="september.html">Սեպտեմբեր</a>
             </li>
             <li class="nav-item">
-                <a class="day-link" aria-current="page" href="october.html">Հոկտեմբեր</a>
+                <a class="day-link" id="october" href="october.html">Հոկտեմբեր</a>
             </li>
             <li class="nav-item">
-                <a class="day-link" aria-current="page" href="november.html">Նոյեմբեր</a>
+                <a class="day-link" id="november" href="november.html">Նոյեմբեր</a>
             </li>
             <li class="nav-item">
-                <a class="day-link" aria-current="page" href="december.html">Դեկտեմբեր</a>
+                <a class="day-link" id="december" href="december.html">Դեկտեմբեր</a>
             </li>
         </ul>
     </div>
     <div class="wow-effect"></div>
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
