@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ամսվա պատվերներ</title>
+  <link rel="stylesheet" href="pstyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      h1 {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      .days-container {
+          display: grid;
+          grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 days a week */
+          gap: 10px;
+          max-width: 600px;
+          margin: 0 auto;
+      }
+      .day-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 60px;
+          height: 60px;
+          background-color: #007bff;
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 8px;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .day-link:hover {
+          background-color: #0056b3;
+          transform: scale(1.05);
+      }
+      .navbar {
+          position: relative;
+          animation: slideIn 0.5s ease-out;
+      }
+
+      @keyframes slideIn {
+          from {
+              transform: translateY(-100%);
+          }
+
+          to {
+              transform: translateY(0);
+          }
+      }
+
+      .nav-link {
+          transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .nav-link:hover {
+          color: #d1d1d1;
+          /* Change text color on hover */
+          transform: translateY(-2px);
+          /* Slightly move text upwards */
+      }
+      .wow-effect {
+          position: absolute;
+          top: 95%;
+          left: 0;
+          width: 100%;
+          height: 5vh;
+          background: linear-gradient(45deg, #ff9900, #fdd974, #ffce46, #ff9900);
+          background-size: 50% 100%;
+          animation: gradientMove 10s ease infinite;
+          z-index: -1;
+          /* Keeps the effect in the background */
+          opacity: 0.7;
+          pointer-events: none;
+          /* Ensures the effect does not interfere with clicking */
+      }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger" aria-label="Eighth navbar example">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Գլխավոր</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="orders.html">Պատվերներ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Տեսականի</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="page1.html">Dargett</a></li>
+              <li><a class="dropdown-item" href="page2.html">Yeremyan Product</a></li>
+              <li><a class="dropdown-item" href="page3.html">Matisse</a></li>
+              <li><a class="dropdown-item" href="page4.html">name</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 id="name">Հոկտեմբեր</h1>
+  <div class="days-container">
+    <!-- Links for each day of January -->
+    <a class="day-link" href="october/01102024.txt" download="01102024.txt">01</a>
+    <a class="day-link" href="october/02102024.txt" download="02102024.txt">02</a>
+    <a class="day-link" href="october/03102024.txt" download="03102024.txt">03</a>
+    <a class="day-link" href="october/04102024.txt" download="04102024.txt">04</a>
+    <a class="day-link" href="october/05102024.txt" download="05102024.txt">05</a>
+    <a class="day-link" href="october/06102024.txt" download="06102024.txt">06</a>
+    <a class="day-link" href="october/07102024.txt" download="07102024.txt">07</a>
+    <a class="day-link" href="october/08102024.txt" download="08102024.txt">08</a>
+    <a class="day-link" href="october/09102024.txt" download="09102024.txt">09</a>
+    <a class="day-link" href="october/10102024.txt" download="10102024.txt">10</a>
+    <a class="day-link" href="october/11102024.txt" download="11102024.txt">11</a>
+    <a class="day-link" href="october/12102024.txt" download="12102024.txt">12</a>
+    <a class="day-link" href="october/13102024.txt" download="13102024.txt">13</a>
+    <a class="day-link" href="october/14102024.txt" download="14102024.txt">14</a>
+    <a class="day-link" href="october/15102024.txt" download="15102024.txt">15</a>
+    <a class="day-link" href="october/16102024.txt" download="16102024.txt">16</a>
+    <a class="day-link" href="october/17102024.txt" download="17102024.txt">17</a>
+    <a class="day-link" href="october/18102024.txt" download="18102024.txt">18</a>
+    <a class="day-link" href="october/19102024.txt" download="19102024.txt">19</a>
+    <a class="day-link" href="october/20102024.txt" download="20102024.txt">20</a>
+    <a class="day-link" href="october/21102024.txt" download="21102024.txt">21</a>
+    <a class="day-link" href="october/22102024.txt" download="22102024.txt">22</a>
+    <a class="day-link" href="october/23102024.txt" download="23102024.txt">23</a>
+    <a class="day-link" href="october/24102024.txt" download="24102024.txt">24</a>
+    <a class="day-link" href="october/25102024.txt" download="25102024.txt">25</a>
+    <a class="day-link" href="october/26102024.txt" download="26102024.txt">26</a>
+    <a class="day-link" href="october/27102024.txt" download="27102024.txt">27</a>
+    <a class="day-link" href="october/28102024.txt" download="28102024.txt">28</a>
+    <a class="day-link" href="october/29102024.txt" download="29102024.txt">29</a>
+    <a class="day-link" href="october/30102024.txt" download="30102024.txt">30</a>
+    <a class="day-link" href="october/31102024.txt" download="31102024.txt">31</a>
+</div>
+<div class="wow-effect"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
