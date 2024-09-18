@@ -1,16 +1,30 @@
-.page-wrapper {
-    position: absolute;
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(53, 160, 0) 50%, rgb(248, 189, 61) 50%);
     bottom: 0;
-    width: 100vw;
-    z-index: 11111;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -100;
 }
 
-
-#waterdrop {
-    height: 70px;
-
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
 }
 
-#waterdrop canvas {
-    bottom: -20px !important;
+.bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
 }
