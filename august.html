@@ -7,26 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ամսվա պատվերներ</title>
   <link rel="stylesheet" href="css/months.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/aug.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger" aria-label="Eighth navbar example">
-    <div class="container">
-      <div class="navbar-collapse" id="navbarsExample07">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Գլխավոր</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="orders.html">Պատվերներ</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar">
+    <div class="nav-cont">
+      <a class="nav-link active" aria-current="page" href="index.html">Գլխավոր</a>
+      <a class="nav-link active" aria-current="page" href="orders.html">Ամիսներ</a>
     </div>
   </nav>
-  <h1 id="name">Օգոստոս</h1>
+
+
+  <div class='console-container'><span id='text'></span>
+    <div class='console-underscore' id='console'>&#95;</div>
+  </div>
+
   <div class="days-container">
     <!-- Links for each day of January -->
     <a class="day-link" href="august/01082024.txt" download="01082024.txt">01</a>
@@ -61,14 +57,52 @@
     <a class="day-link" href="august/30082024.txt" download="30082024.txt">30</a>
     <a class="day-link" href="august/31082024.txt" download="31082024.txt">31</a>
   </div>
-</div>
-<a class="month-link" href="august/August.txt" download="August.txt">Ընդհանուր ամսվա ծախսը</a>
-<div>
-  <div class="wow-effect"></div>
+
+
+  <div class="buttons">
+    <a href="august/August.txt" download="August.txt">
+      <button class="btn-hover color-8">Օգոստոս<br>ամսվա ծախսը</button></a>
+  </div>
+
+  <div class="wrapper">
+    <button class="learn-more" style="transform: rotate(180deg);">
+      <a href="july.html">
+        <span class="circle">
+          <span class="icon arrow"></span>
+        </span>
+        <span class="button-text" style="transform: rotate(180deg);">Հուլիս</span>
+      </a>
+    </button>
+    <h1 id="month-name">Օգոստոս</h1>
+    <button class="learn-more">
+      <a href="september.html">
+        <span class="circle">
+          <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">Սեպտեմբեր</span>
+      </a>
+    </button>
+  </div>
+
+  <div class="globe">
+    <div class="bird">
+      <div class="body">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="beak">
+          <div></div>
+        </div>
+        <div class="feet"></div>
+        <div class="wire"></div>
+      </div>
+      <div class="hills"></div>
+      <div class="cloud"></div>
+      <div class="cloud small"></div>
+    </div>
+  </div>
+
   <script src="js/my.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+  <script src="js/more.js"></script>
 </body>
 
 </html>

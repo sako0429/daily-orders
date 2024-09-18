@@ -4,56 +4,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Durst</title>
+  <title>Ampg Durst</title>
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger" aria-label="Eighth navbar example">
-    <div class="container">
-      <div class="navbar-collapse" id="navbarsExample07">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="orders.html">Ամիսներ</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar">
+    <div class="nav-cont">
+      <a class="nav-link" href="orders.html">Ամիսներ</a>
     </div>
   </nav>
 
-
-  <div class="text-bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-    style="width: 100%; height: 800px;">
-    <div class="my-3 py-3">
-      <h2 class="display-5">Jobs Gallery</h2>
-      <p class="lead">Printed on Durst</p>
-    </div>
-    <div> <img src="pics/Untitled-5.png" width=600></div>
-    <div> <img src="pics/linia-produkcyjna-etykiet-cyfrowych.png"></div>
+  <div class="colors">
+    <span class="drop white" style="background-color: white;" title="white"></span>
+    <span class="drop green" style="background-color: green;" title="green"></span>
+    <span class="drop violet" style="background-color: violet;" title="violet"></span>
+    <span class="drop orange" style="background-color: orange;" title="orange"></span>
+    <span class="drop cyan" style="background-color: cyan;" title="cyan"></span>
+    <span class="drop magenta" style="background-color: magenta;" title="magenta"></span>
+    <span class="drop yellow" style="background-color: yellow;" title="yellow"></span>
+    <span class="drop black" style="background-color: black;" title="black"></span>
   </div>
 
 
-  <footer>
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 AM-PG group, Inc</span>
+
+  <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 100%; height: 800px;">
+    <div class="my-3 py-3">
+      <section>
+        <div class="content">
+          <h2>Durst Jobs Gallery</h2>
+          <h2>Durst Jobs Gallery</h2>
         </div>
-      </footer>
+      </section>
     </div>
+    <div class="pic"> <img src="pics/linia-produkcyjna-etykiet-cyfrowych.png"></div>
+  </div>
+
+  <footer>
+    <a href="https://ampg.am/" class="ampg">© 2024 AM-PG
+      group, Inc</a>
   </footer>
-  <script src="js/my.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+  <script>
+    const items = document.querySelectorAll('.drop');
+
+    items.forEach(item => {
+      item.addEventListener('mouseenter', function () {
+        document.body.style.backgroundColor = this.classList[1]; // Change body background to the class name (color)
+      });
+
+      item.addEventListener('mouseleave', function () {
+        document.body.style.backgroundColor = ''; // Reset to default background
+      });
+    });
+  </script>
+
 
 </body>
 
