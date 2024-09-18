@@ -1,0 +1,16 @@
+.page-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 11111;
+}
+
+
+#waterdrop {
+    height: 70px;
+
+}
+
+#waterdrop canvas {
+    bottom: -20px !important;
+}
